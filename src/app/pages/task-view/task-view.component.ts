@@ -12,8 +12,8 @@ import { CommonModule, NgFor } from '@angular/common';
 })
 export class TaskViewComponent implements OnInit {
 
-  lists: any[] = [];
-  tasks: any[] = [];
+  lists: any;
+  tasks: any;
 
   constructor(private taskService: TaskService, private route: ActivatedRoute) { }
 
