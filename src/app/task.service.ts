@@ -18,6 +18,9 @@ export class TaskService {
   }
 
   getTasks(listId: string) {
+    // We want to send a web request to get all tasks
     return this.webReqService.get(`lists/${listId}/tasks`);
   }
+
+  
 }
